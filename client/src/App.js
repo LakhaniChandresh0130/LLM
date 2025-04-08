@@ -12,7 +12,7 @@ function App() {
     e.preventDefault();
 
     axios
-    .post("http://localhost:8080/chat",{prompt})
+    .post("https://llm-6tdg.onrender.com/chat",{prompt})
     .then((res) => {setResponse(res.data)})
     .catch((err) => {console.error(err)});
   };
